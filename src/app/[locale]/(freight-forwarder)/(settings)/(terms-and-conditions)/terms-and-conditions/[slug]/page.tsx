@@ -1,0 +1,52 @@
+"use client";
+import ViewSingleTermsAndConditions from "@/src/components/pages/settings/terms-and-conditions/ViewSingleTermsAndConditions";
+import ViewSinglePageDetailsHeader from "@/src/components/pages/freight-forwarder/pages/view-single-details/ViewSinglePageDetailsHeader";
+import { getRequest } from "@/src/network/api";
+import { message, Spin } from "antd";
+import React, { useEffect, useState, useCallback } from "react";
+
+export default function Page({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
+  const [service, setService] = useState(null);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const fetchService = useCallback(() => {
+    setLoading(true);
+    getRequest(`/tazamun-freight-forwarder/api/v1/termandconditions/${slug}`)
+      .then((res) => {
+        setService(res?.data);
+        setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
+        message.error("An error occurred while fetching the service.");
+      });
+  }, [slug]);
+
+  useEffect(() => {
+    fetchService();
+  }, [fetchService]);
+
+  if (loading)
+    return (
+      <div className="container py-10 flex justify-center items-center h-screen">
+        <Spin size="large" />
+      </div>
+    );
+
+  return (
+    <div className="container py-10">
+      <ViewSinglePageDetailsHeader
+        title="View Terms & Conditions"
+        service={service}
+        fetchpageDetails={fetchService}
+      />
+      <div className="flex flex-col gap-y-10">
+        <ViewSingleTermsAndConditions service={service} />
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "antd.scss";
+
+:root {
+  --primary-color: #1c2d63;
+  --primary-color-light: #3f60c9;
+  --primary-color-alt: #6580d4;
+  --primary-color-bg: #d8dff4;
+  --secondary-color: #97c620;
+  --secondary-color-light: #dff2af;
+  --danger-color: #d92d20;
+
+  --dark-gray: #474747;
+  --greenish-black: #080b02;
+  --title-color: #191919;
+}
+
+body {
+  overflow-x: hidden;
+}
+//----------------------------- ltr fonts -----------------------------
+
+[dir="ltr"] {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-roboto);
+    font-weight: 500;
+  }
+
+  h5,
+  h6,
+  p,
+  td,
+  a {
+    font-family: var(--font-outfit);
+    font-weight: 400;
+  }
+}
+//----------------------------- rtl fonts -----------------------------
+[dir="rtl"] {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-cairo);
+    font-weight: 600;
+  }
+
+  h5,
+  h6,
+  p,
+  a {
+    font-family: var(--font-noto-kufi-arabic);
+    font-weight: 500;
+  }
+}
+//----------------------------------------------------------
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+//----------------------------- swiper -----------------------------
+.swiper-pagination-bullet {
+  background: var(--primary-color-alt) !important; /* Bullet color */
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  width: 32px !important; /* Active bullet width */
+  height: 12px;
+  border-radius: 16px !important;
+  background-color: var(--primary-color-alt) !important; /* Bullet color */
+}
+.swiper-pagination {
+  text-align: end !important;
+}
+
+.ant-input-checkbox-wrapper {
+  .ant-form-item {
+    margin-bottom: 0px !important;
+  }
+}
+
+//----------------------------- line -----------------------------
+.line {
+  border-bottom: 1px solid #D5D7DA;
+  margin: 30px 0;
+}
+//-------------------------- list decimal upload -------------
+.list-decimal-upload li::marker {
+  color: var(--title-color);
+  font-weight: 500; 
+}

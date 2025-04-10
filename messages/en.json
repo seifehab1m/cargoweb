@@ -1,0 +1,93 @@
+{
+  "navbarAndFooter": {
+    "home": "Home",
+    "services": "Services",
+    "features": "Features",
+    "faq": "FAQs",
+    "aboutUs": "About us",
+    "ourStory": "Our story",
+    "privacyPolicy": "Privacy policy",
+    "termsAndConditions": "Terms and Conditions",
+    "quickLinks": "Quick links",
+    "actions": "Actions",
+    "searchForRates": "Search for rates",
+    "startAsForwarder": "Start as forwarder",
+    "helpAndSupport": "Help & Support",
+    "helpCenter": "Help center",
+    "contactUs": "Contact us",
+    "rights": "©2024 Cargoweb, All rights reserved"
+  },
+  "home": {
+    "hero_title": "Effortless Shipping Solutions",
+    "hero_description": "Connecting businesses with the right freight partners to streamline every shipment",
+    "start_shipping_now": "Start Shipping Today",
+    "services-section": {
+      "title": "Services",
+      "sub_title": "Connecting You to Smarter Shipping Solutions",
+      "description": "From small parcels to bulk freight and specialized goods, our platform connects you with reliable shipping services ensuring safe and timely deliveries for every need"
+    },
+    "features-section": {
+      "title": "Features",
+      "sub_title": "Enhancing Your Shipping with Smart Features",
+      "description": "From reliable freight connections to real-time tracking, our platform offers everything you need to streamline your shipping process"
+    },
+    "frequent_section": {
+      "frequent_qusestions": "Frequent Questions",
+      "sub_title": "Curious? We ve got answers",
+      "description": "An informative resource designed to address common queries and provide clarity"
+    },
+    "Reach_to_us_section": {
+      "title": "Reach to us",
+      "sub_title": "We d love to hear from you",
+      "email_support": "Email support",
+      "call_us_directly": "Call us directly",
+      "form_title": "Stay updated with the latest",
+      "form_description": "Join our newsletter and get the updates in your email"
+    }
+  },
+  "contact_us": {
+    "contact_us": "Contact Us",
+    "description": "Email, call or complete the form to let us know how can we help you.",
+    "customer_support": "Customer Support",
+    "customer_support_desc": "Our support team is available around the clock to address any concerns or queries you may have",
+    "feedback": "Feedback & Suggestions",
+    "feedback_desc": "We value your feedback and continuously working to improve Cargoweb. Your inputs are crucial in shaping the future of Cargoweb.",
+    "full_name": "Full Name",
+    "company_name": "Company Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "address": "Address",
+    "join_now_and_streamline_your_shipping_process": "Join now and streamline your shipping process",
+    "Continue": "Continue",
+    "subscribe": "Subscribe",
+    "submit": "Submit",
+    "get_in_touch": "Get in touch",
+    "you_can_reach_us_anytime": "You can reach us anytime",
+    "by_contacting_us": "By contacting us, you agree to our"
+  },
+  "get_started": "Get Started",
+  "services": "Services",
+  "features": "Features",
+  "frequent_qusestions": "Frequent Questions",
+  "Reach to us": "Reach to us",
+  "read_more": "Read More",
+  "of": "of",
+  "what_we_aim": "What we aim",
+  "what_we_seek": "What we seek",
+  "cargowebs_story": "Cargowebs Story",
+  "terms_conditions": "Terms & Conditions",
+  "and": "and ",
+  "privacy_policy": "Privacy Policy",
+  "explore_the_faqs": "Explore the FAQs",
+  "explore_the_faqs_desc": "You Might Find What You re Looking For!",
+  "breadcrumb": {
+    "home": "Home",
+    "services": "Services",
+    "features": "Features",
+    "faq": "FAQs",
+    "aboutUs": "About us",
+    "ourStory": "Our story",
+    "contact_us": "Contact us"
+  }
+}

@@ -1,0 +1,15 @@
+.active {
+  color: var(--primary-color);
+  font-weight: 500 !important;
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 4px;
+  background-color: var(--primary-color);
+  left: 50%;
+  bottom: -5px;
+  border-radius: 2px;
+}
