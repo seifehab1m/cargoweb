@@ -1,8 +1,15 @@
-import EditableTable from '@/src/components/pages/freight-forwarder/shared/TableWithEdit'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 export default function page() {
   return (
-    <EditableTable />
-  )
+    <>
+      <Image
+        src="https://attachment.cargoweb.com/Attachments/Logo.png"
+        alt="shipper-profiles"
+        width={100}
+        height={100}
+      />
+    </>
+  );
 }
